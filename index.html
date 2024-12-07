@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./resources/icons/love.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+      />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <script src="./scripts/login.js" type="module"></script>
+    <title>Iniciar Sesión</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <section class="titles">
+          <h2 class="title">¡Hola Bianca!</h2>
+          <h4 class="message">Por favor, Ingresa tu contraseña</h4>
+        </section>
+        <section class="controls">
+          <h4 class="alertMessage"></h4>
+          <input type="password" class="password" maxlength="6" />
+          <input type="button" class="login" value="Ingresar" />
+          <a class="forgetPassword">¿Has olvidado tu contraseña?</a>
+        </section>
+      </form>
+    </div>
+  </body>
+</html>

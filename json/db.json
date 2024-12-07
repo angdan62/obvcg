@@ -1,0 +1,31 @@
+{
+    "imagenes":[
+        {
+            "id": 1,
+            "name": "img-001.jpg",
+            "url": ""
+        }
+    ],
+    "videos":[
+        {
+            "id": 1,
+            "name": "media-001.mp4",
+            "url": ""
+        }
+    ],
+    "canciones":[
+        {
+            "id": 1,
+            "name": "Mi historia entre tus dedos",
+            "autor": "Gianluca Grignani",
+            "url": "https://open.spotify.com/track/3bP3RLXPFnGM4vtiXmmadq?si=54b26ede23c14c85"
+        }
+    ],
+    "frases":[
+        {
+            "id": 1,
+            "name": "001",
+            "frase": "Eres mi primer pensamiento cuando me despierto y el último cuando duermo"
+        }
+    ]
+}

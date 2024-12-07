@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite GB S", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    /* font-size: 18px; */
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+}
+
+header, main, footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header{
+    height: 120px;
+    background: -webkit-linear-gradient(180deg, #02315e,#00457e);
+    background: linear-gradient(180deg, #02315e,#00457e);
+}
+
+main{
+    background: -webkit-linear-gradient(180deg, #00457e,#2f70af);
+    background: linear-gradient(180deg, #00457e,#2f70af);
+    min-height: 720px;
+    /* max-height: auto; */
+    align-items: flex-start;
+}
+
+footer{
+    background: -webkit-linear-gradient(180deg, #2f70af,#4b8dcf);
+    background: linear-gradient(180deg, #2f70af,#4b8dcf);
+    height: 180px;
+}
+
+/*ESTILADO DE HEADER*/
+
+.containerHeader{
+    width: 80%;
+    height: 60%;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image{    
+    width: 150px;
+    height: 80%;
+}
+
+.image img{
+    height: 100%;
+}
+
+.menu ul{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    gap: 12px;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    /* color: #5da1d9; */
+    color: #0df3e1;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: #fff;
+    transition: .5s;
+    font-size: 24px;
+}
+
+/*
+
+
+ESTILADO DE MAIN
+
+
+*/
+
+.containerMain{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+
+/* ESTILADO DE INICIO */
+
+.home, .galery, .videos, .music{
+    width: 90%;
+}
+
+.titleSection{
+    /* font-family: "Playwrite GB S", cursive; */
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.containerHome p{
+    /* font-family: "Playwrite GB S", cursive; */
+    font-size: 24px;
+    color: #bfbccf;
+}
+
+/* ESTILADO DE SECCION DE GALERIA */
+
+.cardsContainer{
+    width: 100%;
+    height: 640px;
+    display: flex;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 5px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+  }
+  
+  .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .panel.active{
+    flex: 5;
+    
+  }
+
+.galery h3, .videos h3, .music h3{
+    /* font-family: "Playwrite GB S", cursive; */
+    /* margin-top: 24px; */
+    text-align: center;
+    color: #bfbccf;
+    font-size: 32px;
+    font-optical-sizing: auto;
+    /* padding-bottom: 24px; */
+}
+
+
+/* SECCION PARA INSERTAR VIDEOS */
+
+.videos{
+    height: auto;
+}
+
+.videoContainer{
+    margin-top: 24px;
+    width: 100%;
+    /* height: 720px; */
+    max-height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.videosCard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.videoShow{
+    border: solid 2px #fff;
+    border-radius: 12px;
+    width: 75%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoShow img{
+height: 100%;
+max-width: 100%;
+border-radius: 12px;
+}
+
+.videoPlay{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCION PARA INSERTAR MUSICA */
+
+
+.musicContainer{
+    margin-top: 24px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.songIcon, .videoIcon{
+    width: 120px;
+    height: 120px;
+}
+
+
+/* DESARROLLO DEL FOOTER DE LA PAGINA */
+
+footer{
+    padding-top: 24px;
+    height: 200px;
+    color: #bfbccf;
+    /* color: #2a07aa;  */
+    align-items: flex-end;
+}
+
+.credits{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.credits p{
+    width: 60%;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+
+@media (width <= 480px) {
+
+    .menu ul{
+        font-size: 10px;
+    }
+
+    .container {
+        width: 100vw;
+      }
+  
+      .containerHome p{
+          font-size: 14px;
+      }
+
+      .cardsContainer{
+        flex-direction: column;
+      }
+
+
+    .videoContainer{
+        height: auto;
+        gap: 24px;
+    }
+
+    .videosCard, .musicContainer{
+        gap: 12px;
+    }
+
+    .videoShow{
+        width: 100%;
+    }
+
+    .videoShow video{
+        border-radius: 12px;
+    }
+
+    .songIcon, .videoIcon{
+        width: 75px;
+        height: 75px;
+    }
+
+    .galery h3, .videos h3, .music h3{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+    .credits p{
+        font-size: 12px;
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+  }
+
+
+
+
+
+
+
+
