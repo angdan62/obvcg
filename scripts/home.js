@@ -50,15 +50,15 @@ function chargeRandomVideo(){
 
 // https://drive.google.com/file/d/1LnzAOdVHDHRij-FZv9pEIsDw8c8e7b5d/view?usp=drive_link
 function playVideo(video){
-    // videoShow.innerHTML=`<video class="videoPlay"  controls autoplay> 
-    //         <source src="../resources/home/videos/video_${video}.mp4" type="video/mp4">   
-    //     </video>`
-    videoShow.innerHTML = `
-    <video class="videoPlay" controls autoplay>
-        <source src="https://drive.google.com/uc?id=1LnzAOdVHDHRij-FZv9pEIsDw8c8e7b5d" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-    </video>
-`;
+    videoShow.innerHTML=`<video class="videoPlay"  controls autoplay> 
+            <source src="../resources/home/videos/video_${video}.mp4" type="video/mp4">   
+        </video>`
+//     videoShow.innerHTML = `
+//     <video class="videoPlay" controls autoplay>
+//         <source src="https://drive.google.com/uc?id=1LnzAOdVHDHRij-FZv9pEIsDw8c8e7b5d" type="video/mp4">
+//         Tu navegador no soporta videos HTML5.
+//     </video>
+// `;
 }
 
 // CARGAR MUSICA ALEATORIAMENTE AL HTML
