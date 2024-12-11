@@ -136,7 +136,7 @@ ESTILADO DE MAIN
 
 .panel {
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     height: 100%;
     border-radius: 50px;
